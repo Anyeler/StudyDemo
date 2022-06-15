@@ -17,7 +17,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setup];
+//    [self setup];
 }
 
 - (void)setup {
@@ -39,37 +39,39 @@
 #pragma mark - Touch事件
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesBegan:touches withEvent:event];
     NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, touches, event);
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesMoved:touches withEvent:event];
     NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, touches, event);
+    [super touchesMoved:touches withEvent:event];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesEnded:touches withEvent:event];
     NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, touches, event);
+    [super touchesEnded:touches withEvent:event];
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesCancelled:touches withEvent:event];
     NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, touches, event);
+    [super touchesCancelled:touches withEvent:event];
 }
 
 #pragma mark - 点击区域判断
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+//    NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, @(point), event);
     BOOL isPointInside = [super pointInside:point withEvent:event];
     NSString *isPointInsideStr = isPointInside?@"YES":@"NO";
-    NSLog(@"%@\n%s\nIsPointInside = %@\n%@\n%@\n", self, __FUNCTION__, isPointInsideStr, @(point), event);
+//    NSLog(@"%@\n%s\nIsPointInside = %@\n%@\n%@\n", self, __FUNCTION__, isPointInsideStr, @(point), event);
     return isPointInside;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"%@\n%s\n%@\n%@\n", self, __FUNCTION__, @(point), event);
     UIView *hitView = [super hitTest:point withEvent:event];
-    NSLog(@"%@\n%s\nHitView =\n%@%@\n%@\n", self, __FUNCTION__, hitView, @(point), event);
+//    NSLog(@"%@\n%s\nHitView = %@\n%@\n%@\n", self, __FUNCTION__, hitView, @(point), event);
     return hitView;
 }
 

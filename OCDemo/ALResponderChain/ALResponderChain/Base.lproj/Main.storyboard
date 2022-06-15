@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,7 +66,7 @@
                             <view tag="2000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-8F-X28" userLabel="purple" customClass="ALColorView">
                                 <rect key="frame" x="86" y="367" width="273" height="243"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-OQ-gxO" customClass="ALButton">
+                                    <button opaque="NO" tag="2002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-OQ-gxO" customClass="ALButton">
                                         <rect key="frame" x="106" y="171" width="150" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.28247317090000001" blue="0.2253001865" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -80,6 +81,17 @@
                                             <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldj-Fi-8uI"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmd-0U-Rqa" userLabel="Teal" customClass="ALControl">
+                                        <rect key="frame" x="106" y="80" width="150" height="74"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="8eH-ma-vYg"/>
+                                            <constraint firstAttribute="height" constant="74" id="Tf7-Ya-ehR"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="controlTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNY-DE-5fp"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.55686277149999996" green="0.35294118520000001" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -87,6 +99,8 @@
                                     <constraint firstAttribute="height" constant="243" id="BlM-JY-hce"/>
                                     <constraint firstAttribute="bottom" secondItem="5QP-OQ-gxO" secondAttribute="bottom" constant="22" id="CrE-Zf-QbW"/>
                                     <constraint firstAttribute="width" constant="273" id="JGJ-C2-a30"/>
+                                    <constraint firstAttribute="trailing" secondItem="jmd-0U-Rqa" secondAttribute="trailing" constant="17" id="frN-FG-ekb"/>
+                                    <constraint firstItem="5QP-OQ-gxO" firstAttribute="top" secondItem="jmd-0U-Rqa" secondAttribute="bottom" constant="17" id="g0m-26-A7s"/>
                                 </constraints>
                             </view>
                             <view tag="3000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-QA-UCv" userLabel="Orange" customClass="ALColorView">
@@ -132,4 +146,9 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

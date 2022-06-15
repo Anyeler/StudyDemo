@@ -60,6 +60,10 @@
 
 #pragma mark - Button事件
 
+- (IBAction)controlTapAction:(UIControl *)sender {
+    NSLog(@"%@\n%s\n%@\n", self, __FUNCTION__, sender);
+}
+
 - (IBAction)tapAction:(UIButton *)sender {
     NSLog(@"%@\n%s\n%@\n", self, __FUNCTION__, sender);
 }

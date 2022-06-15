@@ -17,6 +17,7 @@
 		737ED5F52246903F003D6913 /* ALTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 737ED5F42246903F003D6913 /* ALTapGestureRecognizer.m */; };
 		737ED5F8224699E2003D6913 /* ALButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 737ED5F7224699E2003D6913 /* ALButton.m */; };
 		737ED5FB2246A2C2003D6913 /* ALWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 737ED5FA2246A2C2003D6913 /* ALWindow.m */; };
+		73DBC8172859CB6000D0BAED /* ALControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DBC8162859CB6000D0BAED /* ALControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		737ED5F7224699E2003D6913 /* ALButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALButton.m; sourceTree = "<group>"; };
 		737ED5F92246A2C2003D6913 /* ALWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWindow.h; sourceTree = "<group>"; };
 		737ED5FA2246A2C2003D6913 /* ALWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWindow.m; sourceTree = "<group>"; };
+		73DBC8152859CB6000D0BAED /* ALControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALControl.h; sourceTree = "<group>"; };
+		73DBC8162859CB6000D0BAED /* ALControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				737ED5F022468B40003D6913 /* ALColorView.m */,
 				737ED5F32246903F003D6913 /* ALTapGestureRecognizer.h */,
 				737ED5F42246903F003D6913 /* ALTapGestureRecognizer.m */,
+				73DBC8152859CB6000D0BAED /* ALControl.h */,
+				73DBC8162859CB6000D0BAED /* ALControl.m */,
 				737ED5F6224699E2003D6913 /* ALButton.h */,
 				737ED5F7224699E2003D6913 /* ALButton.m */,
 				737ED5F92246A2C2003D6913 /* ALWindow.h */,
@@ -173,6 +178,7 @@
 				737ED5E9224686FC003D6913 /* main.m in Sources */,
 				737ED5F8224699E2003D6913 /* ALButton.m in Sources */,
 				737ED5F52246903F003D6913 /* ALTapGestureRecognizer.m in Sources */,
+				73DBC8172859CB6000D0BAED /* ALControl.m in Sources */,
 				737ED5DB224686FA003D6913 /* AppDelegate.m in Sources */,
 				737ED5FB2246A2C2003D6913 /* ALWindow.m in Sources */,
 				737ED5F122468B40003D6913 /* ALColorView.m in Sources */,
